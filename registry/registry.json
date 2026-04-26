@@ -36,6 +36,10 @@
       "type": "hyperframes:example"
     },
     {
+      "name": "youtube-like-subscribe",
+      "type": "hyperframes:example"
+    },
+    {
       "name": "data-chart",
       "type": "hyperframes:block"
     },
