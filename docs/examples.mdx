@@ -40,6 +40,10 @@ npx hyperframes init my-video --example <name>
     <video className="w-full aspect-video object-cover block" src="https://static.heygen.ai/hyperframes-oss/docs/images/templates/nyt-graph.mp4" poster="https://static.heygen.ai/hyperframes-oss/docs/images/templates/nyt-graph.png" muted loop playsInline preload="metadata" />
     <div className="absolute bottom-0 left-0 right-0 pt-6 pb-2 px-3" style={{background: "linear-gradient(transparent, rgba(0,0,0,0.75))"}}><strong className="text-sm font-semibold text-white block">NYT Graph</strong><span className="text-xs text-zinc-300">Data stories</span></div>
   </div>
+  <div className="tpl-card relative rounded-xl overflow-hidden bg-zinc-900 transition-transform hover:-translate-y-0.5 hover:shadow-xl">
+    <video className="w-full aspect-video object-cover block" src="https://static.heygen.ai/hyperframes-oss/docs/images/templates/youtube-like-subscribe.mp4" poster="https://static.heygen.ai/hyperframes-oss/docs/images/templates/youtube-like-subscribe.png" muted loop playsInline preload="metadata" />
+    <div className="absolute bottom-0 left-0 right-0 pt-6 pb-2 px-3" style={{background: "linear-gradient(transparent, rgba(0,0,0,0.75))"}}><strong className="text-sm font-semibold text-white block">YouTube Like &amp; Subscribe</strong><span className="text-xs text-zinc-300">YouTube CTAs</span></div>
+  </div>
 </div>
 
 ## Portrait Templates
@@ -70,6 +74,7 @@ npx hyperframes init my-video --example <name>
 | `decision-tree` | Diagrammatic | Landscape | Explainers, tutorials |
 | `product-promo` | Multi-scene | Landscape | Product showcases, demos |
 | `nyt-graph` | Editorial data | Landscape | Data stories, reports |
+| `youtube-like-subscribe` | YouTube CTA, multi-scene | Landscape | Like & Subscribe end cards |
 | `vignelli` | Bold, typographic | Portrait | Headlines, announcements |
 | `blank` | Minimal scaffolding | — | Full control, agent-generated |
 
@@ -198,6 +203,30 @@ npx hyperframes init my-video --example <name>
     └── compositions/
         └── nyt-chart.html
     ```
+  </Tab>
+  <Tab title="youtube-like-subscribe">
+    ### youtube-like-subscribe
+
+    Animated YouTube Like & Subscribe call-to-action template with four scenes: bell-ring intro, like button click, subscribe animation with confetti, and outro card.
+
+    **Duration:** 15 seconds (1920×1080 landscape)
+
+    ```
+    my-video/
+    ├── index.html
+    └── compositions/
+        ├── scene1-bell-ring.html
+        ├── scene2-like-button.html
+        ├── scene3-subscribe-cta.html
+        └── scene4-outro-card.html
+    ```
+
+    | Scene | Duration | Description |
+    |-------|----------|-------------|
+    | Bell ring intro | 0 – 2.5s | Notification bell pops in and rings with sound waves |
+    | Like button | 2.5 – 6s | Thumbs-up animates from empty to liked with counter roll |
+    | Subscribe CTA | 6 – 11s | Subscribe button press, confetti burst, bell rings |
+    | Outro card | 11 – 15s | Summary card with like + subscribe rows and floating hearts |
   </Tab>
   <Tab title="blank">
     ### blank
